@@ -1,0 +1,9 @@
+Timestamp,StationID,Status,ReasonCode,RawPayload
+2026-11-02 23:02:38,SUBSTATION_EAST_KOL,APPROVED,System constraints verified clear,"{""station_id"": ""SUBSTATION_EAST_KOL"", ""active_voltage"": 225.0, ""core_temperature"": 65.5}"
+2026-11-02 23:02:38,SUBSTATION_EAST_KOL,REJECTED,Malformed JSON structure,"{""station_id"": ""SUBSTATION_EAST_KOL"", ""active_voltage"": 220, ""core_temp_broken_string"
+2026-11-02 23:02:38,SUBSTATION_EAST_KOL,REJECTED,Missing field: active_voltage,"{""station_id"": ""SUBSTATION_EAST_KOL"", ""core_temperature"": 70.0}"
+2026-11-02 23:02:38,SUBSTATION_EAST_KOL,REJECTED,Unauthorized Station ID,"{""station_id"": ""SUBSTATION_FAKE_ZONE"", ""active_voltage"": 225.0, ""core_temperature"": 60.0}"
+2026-11-02 23:02:38,SUBSTATION_EAST_KOL,REJECTED,Non-numeric data values,"{""station_id"": ""SUBSTATION_EAST_KOL"", ""active_voltage"": ""TEXT_HACK_ATTEMPT"", ""core_temperature"": 65.0}"
+2026-11-02 23:02:38,SUBSTATION_EAST_KOL,REJECTED,Negative value anomaly,"{""station_id"": ""SUBSTATION_EAST_KOL"", ""active_voltage"": -55.4, ""core_temperature"": 65.0}"
+2026-11-02 23:02:38,SUBSTATION_EAST_KOL,REJECTED,Over-voltage threshold breach,"{""station_id"": ""SUBSTATION_EAST_KOL"", ""active_voltage"": 295.0, ""core_temperature"": 65.0}"
+2026-11-02 23:02:38,SUBSTATION_EAST_KOL,REJECTED,Thermal limit breached,"{""station_id"": ""SUBSTATION_EAST_KOL"", ""active_voltage"": 225.0, ""core_temperature"": 104.9}"
